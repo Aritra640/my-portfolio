@@ -1,7 +1,6 @@
 "use client";
 
-import SearchIcon from "./icons/search";
-
+import SearchIcon from "@/components/icons/search";
 
 export function Menu() {
   return (

@@ -1,25 +1,18 @@
 "use client";
 
-import SearchIcon from "@/components/icons/search";
+import { Button } from "@/components/buttons";
 
 export function Menu() {
   return (
-    <div className="flex justify-around pt-2 md:pt-4">
-      <button className="btn btn-outline btn-primary border-purple-900 rounded-2xl hover:bg-purple-950">
-        home
-      </button>
-      <button className="btn btn-outline btn-primary border-purple-900 rounded-2xl hover:bg-purple-950">
-        projects
-      </button>
-      <button className="btn btn-outline btn-primary border-purple-900 rounded-2xl hover:bg-purple-950">
-        notes
-      </button>
-      <button className="btn btn-outline btn-primary border-purple-900 rounded-2xl hover:bg-purple-950">
-        contact
-      </button>
-      <button className="btn btn-outline btn-primary border-purple-900 rounded-2xl hover:bg-purple-950">
-        <SearchIcon />
-      </button>
+    <div>
+      <div className="flex justify-around gap-8 pt-2 md:pt-4">
+        <Button name="about me" onClick={() => {}} />
+        <Button name="projects" onClick={() => {}} />
+        <Button name="notes" onClick={() => {}} />
+        <Button name="contact me" onClick={() => {}} />
+      </div>
+
+      <div className="p-2"></div>
     </div>
   );
 }
